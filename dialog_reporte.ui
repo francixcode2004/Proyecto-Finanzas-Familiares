@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_reporte</class>
+ <widget class="QDialog" name="Dialog_reporte">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1036</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>1008</width>
+     <height>595</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="outEgre">
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Segoe UI&quot;;
+border-color: rgb(0, 0, 0);
+
+background-image: url(:/img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg);</string>
+      </property>
+      <property name="text">
+       <string>TOTAL EGRESO</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="balance">
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Segoe UI&quot;;
+border-color: rgb(0, 0, 0);
+
+background-image: url(:/img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg);</string>
+      </property>
+      <property name="text">
+       <string>                          BALANCE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="outCuadro_1">
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="outCuadro">
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>500</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="outIngre">
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Segoe UI&quot;;
+border-color: rgb(0, 0, 0);
+
+background-image: url(:/img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg);</string>
+      </property>
+      <property name="text">
+       <string>TOTAL INGRESO</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="inPromedio">
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Segoe UI&quot;;
+background-image: url(:/img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg);
+
+border-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/guardar.png</normaloff>:/img/icons/guardar.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

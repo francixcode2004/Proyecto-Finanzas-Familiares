@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/bg/bg.jpg</file>
+        <file>img/bg/bt.jpg</file>
+        <file>img/bg/bg.png</file>
+        <file>img/bg/ac.webp</file>
+        <file>img/bg/ac.jpg</file>
+        <file>img/bg/bglogin.jpg</file>
+        <file>img/bg/background.png</file>
+        <file>sources/img/bg/bgperfil.jpg</file>
+        <file>img/bg/fondo.jpg</file>
+        <file>img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg</file>
+    </qresource>
+</RCC>

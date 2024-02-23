@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Pantalla_principal</class>
+ <widget class="QMainWindow" name="Pantalla_principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Salarios</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/img/icons/icon.ico</normaloff>:/img/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 38);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/img/bg/ac.jpg);</string>
+           </property>
+           <property name="text">
+            <string>Ingresos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/img/bg/ac.jpg);</string>
+           </property>
+           <property name="text">
+            <string>Egresos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/img/bg/ac.jpg);</string>
+           </property>
+           <property name="text">
+            <string>Reporte</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="styleSheet">
+            <string notr="true">background-image: url(:/img/bg/ac.jpg);</string>
+           </property>
+           <property name="text">
+            <string>Agregar Miembro</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="outCuadro">
+         <property name="styleSheet">
+          <string notr="true">background-image: url(:/img/bg/moneda-mesa-madera-naturaleza-borrosa.jpg);</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="separator"/>
+    <addaction name="actionCalcular"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ay&amp;uda</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+   </widget>
+   <widget class="QMenu" name="menuUsuario">
+    <property name="title">
+     <string>Usuario</string>
+    </property>
+    <addaction name="actionMi_perfil"/>
+   </widget>
+   <widget class="QMenu" name="menuIdiomas">
+    <property name="title">
+     <string>Idiomas</string>
+    </property>
+    <addaction name="actionEspanol"/>
+    <addaction name="actionIngles"/>
+    <addaction name="actionPortugues"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuAyuda"/>
+   <addaction name="menuUsuario"/>
+   <addaction name="menuIdiomas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNuevo"/>
+   <addaction name="actionAbrir"/>
+   <addaction name="actionGuardar"/>
+   <addaction name="actionCalcular"/>
+   <addaction name="actionSalir"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/nuevo.png</normaloff>:/img/icons/nuevo.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Nuevo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/abrir.png</normaloff>:/img/icons/abrir.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/guardar.png</normaloff>:/img/icons/guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionCalcular">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/carcular.png</normaloff>:/img/icons/carcular.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Calcular</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/salir.png</normaloff>:/img/icons/salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/ayuda.png</normaloff>:/img/icons/ayuda.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de Salarios</string>
+   </property>
+  </action>
+  <action name="actionMi_perfil">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/perfil.png</normaloff>:/img/icons/perfil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mi perfil</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionEspanol">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/es.png</normaloff>:/img/icons/es.png</iconset>
+   </property>
+   <property name="text">
+    <string>Español</string>
+   </property>
+  </action>
+  <action name="actionIngles">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/en.png</normaloff>:/img/icons/en.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ingles</string>
+   </property>
+  </action>
+  <action name="actionPortugues">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/img/icons/br.png</normaloff>:/img/icons/br.png</iconset>
+   </property>
+   <property name="text">
+    <string>Portugues</string>
+   </property>
+  </action>
+  <action name="actionUsuarios">
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

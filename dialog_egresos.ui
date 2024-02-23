@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_egresos</class>
+ <widget class="QDialog" name="Dialog_egresos">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>312</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mienbros de la faamilia</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/img/icons/icon.ico</normaloff>:/img/icons/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 243, 176);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnmodificar">
+       <property name="text">
+        <string>Modificar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/img/icons/editar.png</normaloff>:/img/icons/editar.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btneliminar">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Eliminar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/img/icons/basura.png</normaloff>:/img/icons/basura.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="agregarboton">
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/img/icons/agregar-usuario.png</normaloff>:/img/icons/agregar-usuario.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="Infecha_2"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnbuscar">
+       <property name="text">
+        <string>Buscar</string>
+       </property>
+       <property name="icon">
+        <iconset resource="icons.qrc">
+         <normaloff>:/img/icons/lupa.png</normaloff>:/img/icons/lupa.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(85, 255, 127);</string>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>MONTO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>FECHA</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>ROL</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>CATEGORIA</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>DESCRIPCION</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLineEdit" name="Inmonto">
+       <property name="placeholderText">
+        <string>$</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateEdit" name="Infecha"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Inrol">
+       <item>
+        <property name="text">
+         <string>Papa</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mama</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hijo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Hija</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Abuelo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Abuela</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Otro miembro</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="Incategoria">
+       <item>
+        <property name="text">
+         <string>Servicios Basicos</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Arriendo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Alimentacion</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Vestimenta</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Plan Celular</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Internet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Otros</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="Indescripcion">
+       <property name="placeholderText">
+        <string>Descripcion</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tbtLista"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

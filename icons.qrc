@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/icons/icon.ico</file>
+        <file>sources/img/icons/user.png</file>
+        <file>img/icons/agregar-usuario.png</file>
+        <file>img/icons/basura.png</file>
+        <file>img/icons/editar.png</file>
+        <file>img/icons/aceptar.png</file>
+        <file>img/icons/boton.png</file>
+        <file>img/icons/es.png</file>
+        <file>img/icons/en.png</file>
+        <file>img/icons/br.png</file>
+        <file>img/icons/perfil.png</file>
+        <file>img/icons/ayuda.png</file>
+        <file>img/icons/salir.png</file>
+        <file>img/icons/nuevo.png</file>
+        <file>img/icons/guardar.png</file>
+        <file>img/icons/carcular.png</file>
+        <file>img/icons/abrir.png</file>
+        <file>img/icons/lupa.png</file>
+        <file>img/icons/proximamente.png</file>
+    </qresource>
+</RCC>
